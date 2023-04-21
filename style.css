@@ -1,0 +1,42 @@
+body {
+    font-family: "Playfair Display";
+    background-color: black;
+    display: grid;
+    place-items: center;
+
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    border: 2px solid white;
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.child {
+    align-self: center;
+    justify-self: center;
+    color: black;
+    border: 2px solid white;
+    text-align: center;
+}
+
+
+
+#local {
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+}
+
+#currentWeather {
+    text-transform: uppercase;
+    color: #192356;
+    padding-left: 10px;
+}
+
+#currentWeather img {
+    padding: 30px;
+}
