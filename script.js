@@ -11,6 +11,8 @@ function render(response) {
     var snow = $('<img>').attr('src', 'images/snow.png');
     var clearSky = $('<img>').attr('src', 'images/clearsky.svg');
     var overcastClouds = $('<img>').attr('src', 'images/overcastClouds.png');
+    var scatteredClouds = $('<img>').attr('src', 'images/scatteredClouds.png');
+
 
 
     $("#local").html(currentLocation);
@@ -63,6 +65,9 @@ function render(response) {
     }
     if (currentWeather == "overcast clouds") {
         $('#currentWeather').append(overcastClouds);
+    }
+    if (currentWeather == "scattered clouds") {
+        $('#currentWeather').append(scatteredClouds);
     }
 }
 
