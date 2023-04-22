@@ -73,6 +73,7 @@ function render(response) {
   if (currentWeather == "moderate rain") {
     $('#currentWeather').append(moderateRain);
 }
+}
 
 $(function () {
     var loc;
