@@ -12,6 +12,7 @@ function render(response) {
     var clearSky = $('<img>').attr('src', 'images/clearsky.svg');
     var overcastClouds = $('<img>').attr('src', 'images/overcastClouds.png');
     var scatteredClouds = $('<img>').attr('src', 'images/scatteredClouds.png');
+    var moderateRain = $('<img>').attr('src', 'images/moderateRain.png');
 
 
 
@@ -69,6 +70,8 @@ function render(response) {
     if (currentWeather == "scattered clouds") {
         $('#currentWeather').append(scatteredClouds);
     }
+  if (currentWeather == "moderate rain") {
+    $('#currentWeather').append(moderateRain);
 }
 
 $(function () {
