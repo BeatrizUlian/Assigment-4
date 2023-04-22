@@ -13,8 +13,8 @@ function render(response) {
     var overcastClouds = $('<img>').attr('src', 'images/overcastClouds.png');
     var scatteredClouds = $('<img>').attr('src', 'images/scatteredClouds.png');
     var moderateRain = $('<img>').attr('src', 'images/moderateRain.png');
-
-
+    var heavyIntensityRain = $('<img>').attr('src', 'images/heavyRain.png');
+ 
 
     $("#local").html(currentLocation);
     $("#temperatura").html(currentTemp);
@@ -73,6 +73,10 @@ function render(response) {
   if (currentWeather == "moderate rain") {
     $('#currentWeather').append(moderateRain);
 }
+    if (currentWeather == "heavy intensity rain") {
+    $('#currentWeather').append(heavyIntensityRain);
+}
+
 }
 
 $(function () {
